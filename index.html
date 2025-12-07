@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Darts Sweepstake Tickets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1>Darts Sweepstake</h1>
+        <p>Click a card to mark a winner • Search & filter your entries</p>
+      </header>
+
+      <section class="controls">
+        <div class="control-item">
+          <label for="search">Search</label>
+          <input
+            type="text"
+            id="search"
+            placeholder="Search by name or dart player..."
+          />
+        </div>
+
+        <div class="control-item inline">
+          <label>
+            <input type="checkbox" id="show-paid-only" />
+            Show paid only
+          </label>
+        </div>
+
+        <button id="clear-winners" class="btn-secondary">
+          Clear winner highlights
+        </button>
+      </section>
+
+      <main id="cards-container" class="cards-grid">
+        <!-- JS will inject cards here -->
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
